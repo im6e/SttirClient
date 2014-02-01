@@ -23,6 +23,8 @@
 		E70BA802189D0C7B0098FAE9 /* FileDetectorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA801189D0C7B0098FAE9 /* FileDetectorHelper.m */; };
 		E70BA805189D0CF70098FAE9 /* FileUploaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA804189D0CF70098FAE9 /* FileUploaderHelper.m */; };
 		E70BA808189D0D9F0098FAE9 /* SttirProjectUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA807189D0D9F0098FAE9 /* SttirProjectUploader.m */; };
+		E70BA80B189D17D00098FAE9 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA80A189D17D00098FAE9 /* PreferencesWindowController.m */; };
+		E70BA80D189D1A220098FAE9 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70BA80C189D1A220098FAE9 /* PreferencesWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		E70BA804189D0CF70098FAE9 /* FileUploaderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileUploaderHelper.m; path = utilities/helpers/FileUploaderHelper.m; sourceTree = "<group>"; };
 		E70BA806189D0D9F0098FAE9 /* SttirProjectUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SttirProjectUploader.h; path = utilities/SttirProjectUploader.h; sourceTree = "<group>"; };
 		E70BA807189D0D9F0098FAE9 /* SttirProjectUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SttirProjectUploader.m; path = utilities/SttirProjectUploader.m; sourceTree = "<group>"; };
+		E70BA809189D17D00098FAE9 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferencesWindowController.h; path = views/PreferencesWindowController.h; sourceTree = "<group>"; };
+		E70BA80A189D17D00098FAE9 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferencesWindowController.m; path = views/PreferencesWindowController.m; sourceTree = "<group>"; };
+		E70BA80C189D1A220098FAE9 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +181,9 @@
 			children = (
 				E70BA7F8189D05470098FAE9 /* SttirMenu.h */,
 				E70BA7F9189D05470098FAE9 /* SttirMenu.m */,
+				E70BA809189D17D00098FAE9 /* PreferencesWindowController.h */,
+				E70BA80A189D17D00098FAE9 /* PreferencesWindowController.m */,
+				E70BA80C189D1A220098FAE9 /* PreferencesWindow.xib */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -280,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E70BA7CC189CFF480098FAE9 /* InfoPlist.strings in Resources */,
+				E70BA80D189D1A220098FAE9 /* PreferencesWindow.xib in Resources */,
 				E70BA7DA189CFF480098FAE9 /* Images.xcassets in Resources */,
 				E70BA7D2189CFF480098FAE9 /* Credits.rtf in Resources */,
 				E70BA7D8189CFF480098FAE9 /* MainMenu.xib in Resources */,
@@ -307,6 +316,7 @@
 				E70BA7FE189D07530098FAE9 /* SttirDirectoryObserver.m in Sources */,
 				E70BA805189D0CF70098FAE9 /* FileUploaderHelper.m in Sources */,
 				E70BA7FA189D05470098FAE9 /* SttirMenu.m in Sources */,
+				E70BA80B189D17D00098FAE9 /* PreferencesWindowController.m in Sources */,
 				E70BA802189D0C7B0098FAE9 /* FileDetectorHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

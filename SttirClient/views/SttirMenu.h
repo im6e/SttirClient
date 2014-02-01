@@ -7,7 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "PreferencesWindowController.h"
 
 @interface SttirMenu : NSMenu
+
+@property (strong, nonatomic) PreferencesWindowController *prefWindowController;
 
 @end

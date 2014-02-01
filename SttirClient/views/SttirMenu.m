@@ -7,12 +7,16 @@
 //
 
 #import "SttirMenu.h"
+#import "PreferencesWindowController.h"
+
 
 @implementation SttirMenu
 {
     NSMenuItem *_preferences;
     NSMenuItem *_quit;
 }
+
+@synthesize prefWindowController;
 
 - (id)init
 {
@@ -31,6 +35,13 @@
 - (void)pushedPreferences:(id)item
 {
     DLog(@"pushed preferences");
+    
+    prefWindowController = [[PreferencesWindowController alloc] initWithWindowNibName:@"PreferencesWindow"];
+    // prefWindowController = [[PreferencesWindowController alloc] init];
+    [prefWindowController showWindow:self];
+    [prefWindowController.window makeMainWindow];
+    DLog(@"nibname: %@", [prefWindowController windowNibName]);
+    
 }
 
 @end
