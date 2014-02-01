@@ -8,16 +8,23 @@
 
 #import "AppDelegate.h"
 #import "views/SttirMenu.h"
+#import "utilities/SttirDirectoryObserver.h"
 
 @implementation AppDelegate
 {
     NSStatusItem *_statusItem;
+    SttirDirectoryObserver *_direcotryObserver;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
     [self setupStatusItem];
+
+    // Initialize and start observing a directory
+    // TODO: Dont make it hard-coding
+    _direcotryObserver = [[SttirDirectoryObserver alloc] initWithDirectoryPath:@"/Users/im6e/Documents/Sttir"];
+    [_direcotryObserver startObserving];
 }
 
 

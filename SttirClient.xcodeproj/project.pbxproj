@@ -19,6 +19,7 @@
 		E70BA7EA189CFF480098FAE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E70BA7E8189CFF480098FAE9 /* InfoPlist.strings */; };
 		E70BA7EC189CFF480098FAE9 /* SttirClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA7EB189CFF480098FAE9 /* SttirClientTests.m */; };
 		E70BA7FA189D05470098FAE9 /* SttirMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA7F9189D05470098FAE9 /* SttirMenu.m */; };
+		E70BA7FE189D07530098FAE9 /* SttirDirectoryObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA7FD189D07530098FAE9 /* SttirDirectoryObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		E70BA7EB189CFF480098FAE9 /* SttirClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SttirClientTests.m; sourceTree = "<group>"; };
 		E70BA7F8189D05470098FAE9 /* SttirMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SttirMenu.h; path = views/SttirMenu.h; sourceTree = "<group>"; };
 		E70BA7F9189D05470098FAE9 /* SttirMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SttirMenu.m; path = views/SttirMenu.m; sourceTree = "<group>"; };
+		E70BA7FC189D07530098FAE9 /* SttirDirectoryObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SttirDirectoryObserver.h; path = utilities/SttirDirectoryObserver.h; sourceTree = "<group>"; };
+		E70BA7FD189D07530098FAE9 /* SttirDirectoryObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SttirDirectoryObserver.m; path = utilities/SttirDirectoryObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,7 @@
 		E70BA7C7189CFF480098FAE9 /* SttirClient */ = {
 			isa = PBXGroup;
 			children = (
+				E70BA7FB189D070E0098FAE9 /* utilities */,
 				E70BA7F5189D05030098FAE9 /* views */,
 				E70BA7D3189CFF480098FAE9 /* AppDelegate.h */,
 				E70BA7D4189CFF480098FAE9 /* AppDelegate.m */,
@@ -165,6 +169,15 @@
 				E70BA7F9189D05470098FAE9 /* SttirMenu.m */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		E70BA7FB189D070E0098FAE9 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E70BA7FC189D07530098FAE9 /* SttirDirectoryObserver.h */,
+				E70BA7FD189D07530098FAE9 /* SttirDirectoryObserver.m */,
+			);
+			name = utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +280,7 @@
 			files = (
 				E70BA7D5189CFF480098FAE9 /* AppDelegate.m in Sources */,
 				E70BA7CE189CFF480098FAE9 /* main.m in Sources */,
+				E70BA7FE189D07530098FAE9 /* SttirDirectoryObserver.m in Sources */,
 				E70BA7FA189D05470098FAE9 /* SttirMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
