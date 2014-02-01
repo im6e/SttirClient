@@ -7,6 +7,7 @@
 //
 
 #import "SttirDirectoryObserver.h"
+#import "SttirProjectUploader.h"
 #import <CoreServices/CoreServices.h>
 
 @interface SttirDirectoryObserver()
@@ -79,9 +80,11 @@ void fs_event_callback(ConstFSEventStreamRef streamRef, void *clientCallBackInfo
     char **paths = eventPaths;
     NSMutableArray *directories = [NSMutableArray array];
 
+    SttirProjectUploader *_projectUploader = [[SttirProjectUploader alloc] init];
+
     for (int i = 0 ; i < numEvents ; i++) {
         NSString *strPath = [NSString stringWithCString:paths[i] encoding:NSUTF8StringEncoding];
-        DLog(@"Path: %@", strPath);
+        [_projectUploader callUploadAPI:strPath];
         [directories addObject:strPath];
     }
 

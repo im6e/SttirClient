@@ -20,6 +20,9 @@
 		E70BA7EC189CFF480098FAE9 /* SttirClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA7EB189CFF480098FAE9 /* SttirClientTests.m */; };
 		E70BA7FA189D05470098FAE9 /* SttirMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA7F9189D05470098FAE9 /* SttirMenu.m */; };
 		E70BA7FE189D07530098FAE9 /* SttirDirectoryObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA7FD189D07530098FAE9 /* SttirDirectoryObserver.m */; };
+		E70BA802189D0C7B0098FAE9 /* FileDetectorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA801189D0C7B0098FAE9 /* FileDetectorHelper.m */; };
+		E70BA805189D0CF70098FAE9 /* FileUploaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA804189D0CF70098FAE9 /* FileUploaderHelper.m */; };
+		E70BA808189D0D9F0098FAE9 /* SttirProjectUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA807189D0D9F0098FAE9 /* SttirProjectUploader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,12 @@
 		E70BA7F9189D05470098FAE9 /* SttirMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SttirMenu.m; path = views/SttirMenu.m; sourceTree = "<group>"; };
 		E70BA7FC189D07530098FAE9 /* SttirDirectoryObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SttirDirectoryObserver.h; path = utilities/SttirDirectoryObserver.h; sourceTree = "<group>"; };
 		E70BA7FD189D07530098FAE9 /* SttirDirectoryObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SttirDirectoryObserver.m; path = utilities/SttirDirectoryObserver.m; sourceTree = "<group>"; };
+		E70BA800189D0C7B0098FAE9 /* FileDetectorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileDetectorHelper.h; path = utilities/helpers/FileDetectorHelper.h; sourceTree = "<group>"; };
+		E70BA801189D0C7B0098FAE9 /* FileDetectorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileDetectorHelper.m; path = utilities/helpers/FileDetectorHelper.m; sourceTree = "<group>"; };
+		E70BA803189D0CF70098FAE9 /* FileUploaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileUploaderHelper.h; path = utilities/helpers/FileUploaderHelper.h; sourceTree = "<group>"; };
+		E70BA804189D0CF70098FAE9 /* FileUploaderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileUploaderHelper.m; path = utilities/helpers/FileUploaderHelper.m; sourceTree = "<group>"; };
+		E70BA806189D0D9F0098FAE9 /* SttirProjectUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SttirProjectUploader.h; path = utilities/SttirProjectUploader.h; sourceTree = "<group>"; };
+		E70BA807189D0D9F0098FAE9 /* SttirProjectUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SttirProjectUploader.m; path = utilities/SttirProjectUploader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,10 +183,24 @@
 		E70BA7FB189D070E0098FAE9 /* utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E70BA7FF189D0C610098FAE9 /* helpers */,
 				E70BA7FC189D07530098FAE9 /* SttirDirectoryObserver.h */,
 				E70BA7FD189D07530098FAE9 /* SttirDirectoryObserver.m */,
+				E70BA806189D0D9F0098FAE9 /* SttirProjectUploader.h */,
+				E70BA807189D0D9F0098FAE9 /* SttirProjectUploader.m */,
 			);
 			name = utilities;
+			sourceTree = "<group>";
+		};
+		E70BA7FF189D0C610098FAE9 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E70BA800189D0C7B0098FAE9 /* FileDetectorHelper.h */,
+				E70BA801189D0C7B0098FAE9 /* FileDetectorHelper.m */,
+				E70BA803189D0CF70098FAE9 /* FileUploaderHelper.h */,
+				E70BA804189D0CF70098FAE9 /* FileUploaderHelper.m */,
+			);
+			name = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E70BA7D5189CFF480098FAE9 /* AppDelegate.m in Sources */,
+				E70BA808189D0D9F0098FAE9 /* SttirProjectUploader.m in Sources */,
 				E70BA7CE189CFF480098FAE9 /* main.m in Sources */,
 				E70BA7FE189D07530098FAE9 /* SttirDirectoryObserver.m in Sources */,
+				E70BA805189D0CF70098FAE9 /* FileUploaderHelper.m in Sources */,
 				E70BA7FA189D05470098FAE9 /* SttirMenu.m in Sources */,
+				E70BA802189D0C7B0098FAE9 /* FileDetectorHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
