@@ -8,5 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PreferencesWindowController : NSWindowController
+@interface PreferencesWindowController : NSWindowController<NSTextViewDelegate>
+
 @end

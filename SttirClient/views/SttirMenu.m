@@ -37,11 +37,8 @@
     DLog(@"pushed preferences");
     
     prefWindowController = [[PreferencesWindowController alloc] initWithWindowNibName:@"PreferencesWindow"];
-    // prefWindowController = [[PreferencesWindowController alloc] init];
     [prefWindowController showWindow:self];
     [prefWindowController.window makeMainWindow];
-    DLog(@"nibname: %@", [prefWindowController windowNibName]);
-    
 }
 
 @end

@@ -25,6 +25,7 @@
 		E70BA808189D0D9F0098FAE9 /* SttirProjectUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA807189D0D9F0098FAE9 /* SttirProjectUploader.m */; };
 		E70BA80B189D17D00098FAE9 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA80A189D17D00098FAE9 /* PreferencesWindowController.m */; };
 		E70BA80D189D1A220098FAE9 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70BA80C189D1A220098FAE9 /* PreferencesWindow.xib */; };
+		E70BA810189E34340098FAE9 /* SttirSettingHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E70BA80F189E34340098FAE9 /* SttirSettingHolder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,9 @@
 		E70BA809189D17D00098FAE9 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferencesWindowController.h; path = views/PreferencesWindowController.h; sourceTree = "<group>"; };
 		E70BA80A189D17D00098FAE9 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferencesWindowController.m; path = views/PreferencesWindowController.m; sourceTree = "<group>"; };
 		E70BA80C189D1A220098FAE9 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		E70BA80E189E34340098FAE9 /* SttirSettingHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SttirSettingHolder.h; path = utilities/SttirSettingHolder.h; sourceTree = "<group>"; };
+		E70BA80F189E34340098FAE9 /* SttirSettingHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SttirSettingHolder.m; path = utilities/SttirSettingHolder.m; sourceTree = "<group>"; };
+		E70BA811189E37EB0098FAE9 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = utilities/Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,9 @@
 				E70BA7FD189D07530098FAE9 /* SttirDirectoryObserver.m */,
 				E70BA806189D0D9F0098FAE9 /* SttirProjectUploader.h */,
 				E70BA807189D0D9F0098FAE9 /* SttirProjectUploader.m */,
+				E70BA80E189E34340098FAE9 /* SttirSettingHolder.h */,
+				E70BA80F189E34340098FAE9 /* SttirSettingHolder.m */,
+				E70BA811189E37EB0098FAE9 /* Constants.h */,
 			);
 			name = utilities;
 			sourceTree = "<group>";
@@ -315,6 +322,7 @@
 				E70BA7CE189CFF480098FAE9 /* main.m in Sources */,
 				E70BA7FE189D07530098FAE9 /* SttirDirectoryObserver.m in Sources */,
 				E70BA805189D0CF70098FAE9 /* FileUploaderHelper.m in Sources */,
+				E70BA810189E34340098FAE9 /* SttirSettingHolder.m in Sources */,
 				E70BA7FA189D05470098FAE9 /* SttirMenu.m in Sources */,
 				E70BA80B189D17D00098FAE9 /* PreferencesWindowController.m in Sources */,
 				E70BA802189D0C7B0098FAE9 /* FileDetectorHelper.m in Sources */,

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "views/SttirMenu.h"
 #import "utilities/SttirDirectoryObserver.h"
+#import "utilities/SttirSettingHolder.h"
 
 @implementation AppDelegate
 {
@@ -18,13 +19,16 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
     [self setupStatusItem];
 
-    // Initialize and start observing a directory
-    // TODO: Dont make it hard-coding
-    _direcotryObserver = [[SttirDirectoryObserver alloc] initWithDirectoryPath:@"/Users/im6e/Documents/Sttir"];
-    [_direcotryObserver startObserving];
+    // path が設定されていたら監視開始、なければ setting
+    NSString *pathname = [SttirSettingHolder getSetting:STTIR_DIR_KEY];
+    if (!pathname) {
+        // TODO: if dir haven't been set yet. show Preferences window.
+    } else {
+        _direcotryObserver = [[SttirDirectoryObserver alloc] initWithDirectoryPath:pathname];
+        [_direcotryObserver startObserving];
+    }
 }
 
 
