@@ -22,6 +22,8 @@
     FSEventStreamRef _stream;
 }
 
+// TODO: これシングルトンにしないといけないかも
+
 #pragma mark- Public Methods
 - (id)initWithDirectoryPath:(NSString *)path
 {
