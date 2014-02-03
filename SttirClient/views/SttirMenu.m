@@ -38,7 +38,7 @@
     
     prefWindowController = [[PreferencesWindowController alloc] initWithWindowNibName:@"PreferencesWindow"];
     [prefWindowController showWindow:self];
-    [prefWindowController.window makeMainWindow];
+    [prefWindowController.window makeKeyWindow];
 }
 
 @end

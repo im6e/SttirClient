@@ -21,7 +21,9 @@
 
 - (void)awakeFromNib
 {
-    [_directoryField setStringValue:_pathname];
+    if (_pathname) {
+        [_directoryField setStringValue:_pathname];
+    }
 }
 
 - (id)initWithWindowNibName:(NSString *)windowNibName
